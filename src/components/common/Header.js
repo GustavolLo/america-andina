@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <header id="main-navbar">
       <nav className="navbar bg-primary navbar-dark navbar-expand-md fixed-top">
-        <a class="navbar-brand" href="/">
+        <a className="navbar-brand" href="/">
           <img
             src={logo}
             width="30"
             height="30"
-            class="d-inline-block align-top rounded-circle mx-2"
+            className="d-inline-block align-top rounded-circle mx-2"
             alt="Logo"
           />
           <div className="d-inline-block display-6 px-2">America Andina</div>

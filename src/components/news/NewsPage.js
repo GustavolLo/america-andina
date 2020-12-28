@@ -1,20 +1,70 @@
 import React from "react";
+import "./NewsPage.css";
+import amunanti from "../../images/amunanti.jpg";
 import diablada from "../../images/diablada.jpg";
+import video from "../../videos/repetition_aa_Trim.mp4";
 
 export default function NewsPage() {
   return (
-    <div>
-      <h1>Actualités</h1>
-      <span>
-        América Andina réalise une vidéo pour le Festival de folklore
-        latino-américain.
-      </span>
-      <p>
-        Le groupe sort de nouveaux costumes et danseurs, il veut capter
-        l'attention de tout le public avec de beaux costumes qui représentent
-        des démons colorés.
-      </p>
-      <img src={diablada} alt="Dance Diablada" />
-    </div>
+    <>
+      <div className="jumbotron jumbotron-title">
+        <div className="container">
+          <h1 className="display-2 my-4 text-white">Actualités</h1>
+        </div>
+      </div>
+      <div className="container pt-5">
+        <div className="row">
+          <div className="col col-md-6">
+            <div className="card">
+              <img className="card-img-top" src={amunanti} alt="Card cap" />
+              <div className="card-body">
+                <h5 className="card-title">
+                  Ateliers enfants gratuits sur Paris
+                </h5>
+                <p className="card-text text-justify">
+                  L'Association America Andina organise des ateliers gratuits
+                  pour les enfants dans différents quartiers de Paris. Venez en
+                  apprendre un peu plus sur les danses folkloriques d'Amérique
+                  latine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col col-md-6">
+            <div className="row">
+              <div className="card">
+                <video
+                  className="card-img-top"
+                  src={video}
+                  width="auto"
+                  height="auto"
+                  controls="controls"
+                  autoPlay={false}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    Préparation pour le festival folklorique
+                  </h5>
+                  <p className="card-text text-justify">
+                    América Andina réalise une vidéo pour le Festival de
+                    folklore latino-américain. Le groupe sort de nouveaux
+                    costumes et danseurs, il veut capter l'attention de tout le
+                    public avec de beaux costumes qui représentent des démons
+                    colorés.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <img
+                src={diablada}
+                className="rounded-lg w-100"
+                alt="Dance diablada"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
