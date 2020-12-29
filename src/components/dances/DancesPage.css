@@ -1,0 +1,7 @@
+.card-horizontal {
+  flex-direction: row !important;
+}
+
+.card-horizontal img {
+  width: 30%;
+}

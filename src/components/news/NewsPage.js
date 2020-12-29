@@ -2,7 +2,8 @@ import React from "react";
 import "./NewsPage.css";
 import amunanti from "../../images/amunanti.jpg";
 import diablada from "../../images/diablada.jpg";
-import video from "../../videos/repetition_aa_Trim.mp4";
+// import video from "../../videos/repetition_aa_Trim.mp4";
+import repetition from "../../images/repetition_aa_photo.jpg";
 
 export default function NewsPage() {
   return (
@@ -15,8 +16,12 @@ export default function NewsPage() {
       <div className="container pt-5">
         <div className="row">
           <div className="col col-md-6">
-            <div className="card">
-              <img className="card-img-top" src={amunanti} alt="Card cap" />
+            <div className="card m-5">
+              <img
+                className="card-img-top"
+                src={amunanti}
+                alt="Annonce Sur la Route des Andes"
+              />
               <div className="card-body">
                 <h5 className="card-title">
                   Ateliers enfants gratuits sur Paris
@@ -32,14 +37,19 @@ export default function NewsPage() {
           </div>
           <div className="col col-md-6">
             <div className="row">
-              <div className="card">
-                <video
+              <div className="card m-5">
+                {/* <video
                   className="card-img-top"
                   src={video}
                   width="auto"
                   height="auto"
                   controls="controls"
                   autoPlay={false}
+                /> */}
+                <img
+                  src={repetition}
+                  className="card-img-top"
+                  alt="Repetiion Diablada"
                 />
                 <div className="card-body">
                   <h5 className="card-title">
@@ -56,11 +66,13 @@ export default function NewsPage() {
               </div>
             </div>
             <div className="row">
-              <img
-                src={diablada}
-                className="rounded-lg w-100"
-                alt="Dance diablada"
-              />
+              <div className="card m-5">
+                <img
+                  src={diablada}
+                  className="rounded-lg w-100"
+                  alt="Dance diablada"
+                />
+              </div>
             </div>
           </div>
         </div>
