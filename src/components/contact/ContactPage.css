@@ -1,0 +1,22 @@
+.icon {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+}
+.facebook {
+    background: url('../../icons/facebook.ico');
+}
+.instagram {
+    background: url('../../icons/instagram.ico');
+}
+.gmail {
+    background: url('../../icons/gmail.ico');
+}
+.whatsapp {
+    background: url('../../icons/whatsapp.ico');
+}
+.inline > * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1vw;
+}
